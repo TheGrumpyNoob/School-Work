@@ -1,0 +1,38 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            height: 23px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <table style="width:100%;">
+            <tr>
+                <td style="background-color: #00FF00; font-family: Arial; font-size: 100px; font-weight: bold; font-style: italic; font-variant: inherit; text-transform: capitalize;">
+                    <asp:HyperLink ID="HyperLink1" runat="server" ImageHeight="150px" ImageUrl="~/IMa/images.png" ImageWidth="150px">HyperLink</asp:HyperLink>
+                    SugmaFood</td>
+            </tr>
+            <tr>
+                <td class="auto-style1"></td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+        </table>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>
